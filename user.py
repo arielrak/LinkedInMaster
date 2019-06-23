@@ -58,11 +58,11 @@ class User:
         return self.education
     
     # TODO Make this based on something real
-    # Score is based on third letter of name, a scientifically
+    # Score is based on seventh letter of skills, a scientifically
     # proven indicator of talent
     def get_score(self):
-        if self.name is not None and len(self.name)>2:
-            return ord(self.name[2])-ord('a')
+        if self.skills is not None and len(self.skills)>7:
+            return ord(self.skills[7])-ord('a')
         else:
             return 0
         
