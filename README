@@ -1,15 +1,14 @@
-#######################################################################
-API Usage: 
+## API Usage: 
 
 To run:
 1. Navigate to project directory
-2. Execute npm i scrapedin
-3. Execute pip install naked
-4. Execute pip install flask
-5. Execute: export FLASK_APP=./rest_interface.py
-6. Execute: flask run
-#######################################################################
-Endpoints:
+1. Execute npm i scrapedin
+1. Execute pip install naked
+1. Execute pip install flask
+1. Execute: export FLASK_APP=./rest_interface.py
+1. Execute: flask run
+
+## Endpoints:
 
 http://localhost:5000/api/query?[attr=]
 	Query users in the system by attribute
@@ -22,8 +21,8 @@ http://localhost:5000/api/add?url=
 	
 http://localhost:5000/api/cookie
 	Try it and find out!
-#######################################################################
-Implementation Details:
+
+## Implementation Details:
 
 	sqllite3 used for backend. Simply a file stored on the device. 
 	Because all database logic is written in SQL, this can be easily 
@@ -36,4 +35,3 @@ Implementation Details:
 	Credits to https://github.com/linkedtales/scrapedin
 	
 	API returns information, for the most part, as JSON
-#######################################################################
